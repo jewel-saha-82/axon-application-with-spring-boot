@@ -5,3 +5,4 @@ Resources
 2. https://www.youtube.com/playlist?list=PL9l1zUfnZkZl7PEv8955O3Cg018e1qrFV
 3. https://www.youtube.com/watch?v=SL2VSYecDvQ
 4. DDD - https://www.youtube.com/playlist?list=PLZBNtT95PIW3BPNYF5pYOi4MJjg_boXCG
+5. https://www.youtube.com/watch?v=tqn9p8Duy54 - Spring Boot
