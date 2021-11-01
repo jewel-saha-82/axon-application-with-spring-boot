@@ -1,6 +1,8 @@
 package org.axon.poc.query.api.controller;
 
+import org.axon.poc.query.api.model.DeviceRestModel;
 import org.axon.poc.query.api.model.ProductRestModel;
+import org.axon.poc.query.api.queries.GetDeviceQuery;
 import org.axon.poc.query.api.queries.GetProductQuery;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
@@ -29,5 +31,16 @@ public class QueryController {
         queryGateway.query(getProductQuery, ResponseTypes.multipleInstancesOf(ProductRestModel.class)).join();
 
         return productRestModels;
+    }
+
+    @GetMapping("/devices")
+    public List<DeviceRestModel> getDevices() {
+
+        GetDeviceQuery getDeviceQuery = new GetDeviceQuery();
+
+        List<DeviceRestModel> deviceRestModels =
+                queryGateway.query(getDeviceQuery, ResponseTypes.multipleInstancesOf(DeviceRestModel.class)).join();
+
+        return deviceRestModels;
     }
 }
