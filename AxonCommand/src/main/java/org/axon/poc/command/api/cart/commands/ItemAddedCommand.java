@@ -1,18 +1,16 @@
-package org.axon.poc.command.api.commands;
+package org.axon.poc.command.api.cart.commands;
 
 import lombok.Builder;
 import lombok.Data;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-import java.math.BigDecimal;
+import java.util.UUID;
 
 @Data
 @Builder
-public class CreateProductCommand {
-
+public class ItemAddedCommand {
     @TargetAggregateIdentifier
-    private String id;
-    private String name;
-    private BigDecimal price;
+    private String cartId;
+    private String item;
     private int quantity;
 }

@@ -1,7 +1,7 @@
-package org.axon.poc.command.api.aggregate;
+package org.axon.poc.command.api.test.aggregate;
 
 import com.axon.common.event.ProductCreatedEvent;
-import org.axon.poc.command.api.commands.CreateProductCommand;
+import org.axon.poc.command.api.test.commands.CreateProductCommand;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;

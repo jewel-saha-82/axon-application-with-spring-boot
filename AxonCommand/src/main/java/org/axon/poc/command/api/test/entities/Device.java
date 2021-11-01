@@ -1,18 +1,16 @@
-package org.axon.poc.command.api.entities;
+package org.axon.poc.command.api.test.entities;
 
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.math.BigDecimal;
 
 @Data
 @Entity
-public class Product {
+public class Device {
 
     @Id
     private String id;
     private String name;
-    private BigDecimal price;
-    private int quantity;
+    private String type;
 }

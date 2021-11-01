@@ -1,19 +1,16 @@
-package org.axon.poc.command.api.controller;
+package org.axon.poc.command.api.test.controller;
 
-import org.axon.poc.command.api.commands.CreateDeviceCommand;
-import org.axon.poc.command.api.commands.CreateProductCommand;
-import org.axon.poc.command.api.model.DeviceRestModel;
-import org.axon.poc.command.api.model.ProductRestModel;
+import org.axon.poc.command.api.test.commands.CreateDeviceCommand;
+import org.axon.poc.command.api.test.commands.CreateProductCommand;
+import org.axon.poc.command.api.test.model.DeviceRestModel;
+import org.axon.poc.command.api.test.model.ProductRestModel;
 import org.axonframework.commandhandling.gateway.CommandGateway;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 @RestController
