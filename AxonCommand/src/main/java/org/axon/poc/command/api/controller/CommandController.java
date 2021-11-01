@@ -19,10 +19,13 @@ import java.util.UUID;
 @RestController
 public class CommandController {
 
-    @Autowired
     private CommandGateway commandGateway;
 
-    @PostMapping(value = "/products/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public CommandController(CommandGateway commandGateway) {
+        this.commandGateway = commandGateway;
+    }
+
+    @PostMapping(value = "/products/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> createProduct(
             @RequestBody ProductRestModel productRestModel) {
 
@@ -40,7 +43,7 @@ public class CommandController {
         return ResponseEntity.ok().body(result);
     }
 
-    @PostMapping(value = "/devices/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/devices/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> createDevice(
             @RequestBody DeviceRestModel deviceRestModel) {
 
