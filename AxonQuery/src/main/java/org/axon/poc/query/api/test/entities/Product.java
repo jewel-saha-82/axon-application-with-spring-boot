@@ -1,4 +1,4 @@
-package org.axon.poc.query.api.entities;
+package org.axon.poc.query.api.test.entities;
 
 import lombok.Data;
 

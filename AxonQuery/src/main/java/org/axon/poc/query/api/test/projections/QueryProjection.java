@@ -1,11 +1,11 @@
-package org.axon.poc.query.api.projections;
+package org.axon.poc.query.api.test.projections;
 
-import org.axon.poc.query.api.model.DeviceRestModel;
-import org.axon.poc.query.api.model.ProductRestModel;
-import org.axon.poc.query.api.queries.GetDeviceQuery;
-import org.axon.poc.query.api.queries.GetProductQuery;
-import org.axon.poc.query.api.repository.DeviceRepository;
-import org.axon.poc.query.api.repository.ProductRepository;
+import org.axon.poc.query.api.test.model.DeviceRestModel;
+import org.axon.poc.query.api.test.model.ProductRestModel;
+import org.axon.poc.query.api.test.queries.GetDeviceQuery;
+import org.axon.poc.query.api.test.queries.GetProductQuery;
+import org.axon.poc.query.api.test.repository.DeviceRepository;
+import org.axon.poc.query.api.test.repository.ProductRepository;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.stereotype.Component;
 

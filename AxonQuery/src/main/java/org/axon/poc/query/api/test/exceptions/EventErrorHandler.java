@@ -1,4 +1,4 @@
-package org.axon.poc.query.api.exceptions;
+package org.axon.poc.query.api.test.exceptions;
 
 import org.axonframework.eventhandling.EventMessage;
 import org.axonframework.eventhandling.EventMessageHandler;

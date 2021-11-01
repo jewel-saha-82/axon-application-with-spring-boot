@@ -1,6 +1,6 @@
 package org.axon.poc;
 
-import org.axon.poc.query.api.exceptions.EventErrorHandler;
+import org.axon.poc.query.api.test.exceptions.EventErrorHandler;
 import org.axonframework.config.EventProcessingConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

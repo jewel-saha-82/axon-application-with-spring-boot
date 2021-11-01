@@ -1,11 +1,11 @@
-package org.axon.poc.query.api.event.handlers;
+package org.axon.poc.query.api.test.handlers;
 
 import com.axon.common.event.DeviceCreatedEvent;
 import com.axon.common.event.ProductCreatedEvent;
-import org.axon.poc.query.api.entities.Device;
-import org.axon.poc.query.api.entities.Product;
-import org.axon.poc.query.api.repository.DeviceRepository;
-import org.axon.poc.query.api.repository.ProductRepository;
+import org.axon.poc.query.api.test.entities.Device;
+import org.axon.poc.query.api.test.entities.Product;
+import org.axon.poc.query.api.test.repository.DeviceRepository;
+import org.axon.poc.query.api.test.repository.ProductRepository;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.messaging.interceptors.ExceptionHandler;

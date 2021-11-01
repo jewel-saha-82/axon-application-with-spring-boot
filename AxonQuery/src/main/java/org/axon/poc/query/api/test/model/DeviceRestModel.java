@@ -1,4 +1,4 @@
-package org.axon.poc.query.api.model;
+package org.axon.poc.query.api.test.model;
 
 import lombok.Builder;
 import lombok.Data;
