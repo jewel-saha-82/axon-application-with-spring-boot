@@ -1,17 +1,13 @@
 package org.axon.poc.command.api.aggregate;
 
 import org.axon.poc.command.api.commands.CreateDeviceCommand;
-import org.axon.poc.command.api.commands.CreateProductCommand;
-import org.axon.poc.command.api.event.DeviceCreatedEvent;
-import org.axon.poc.command.api.event.ProductCreatedEvent;
+import org.axon.poc.event.DeviceCreatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.spring.stereotype.Aggregate;
 import org.springframework.beans.BeanUtils;
-
-import java.math.BigDecimal;
 
 @Aggregate
 public class DeviceAggregate {

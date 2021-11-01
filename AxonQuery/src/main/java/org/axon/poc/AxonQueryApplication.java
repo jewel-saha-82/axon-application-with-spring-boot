@@ -1,4 +1,4 @@
-package com.axon.poce;
+package org.axon.poc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

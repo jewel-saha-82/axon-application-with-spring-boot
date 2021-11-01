@@ -1,4 +1,4 @@
-package org.axon.poc.command.api.event;
+package org.axon.poc.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

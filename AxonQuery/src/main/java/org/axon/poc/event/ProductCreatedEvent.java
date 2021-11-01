@@ -1,4 +1,4 @@
-package org.axon.poc.command.api.event;
+package org.axon.poc.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,8 +11,9 @@ import java.math.BigDecimal;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DeviceCreatedEvent {
+public class ProductCreatedEvent {
     private String id;
     private String name;
-    private String type;
+    private BigDecimal price;
+    private int quantity;
 }
