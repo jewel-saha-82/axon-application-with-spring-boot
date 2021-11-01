@@ -1,5 +1,8 @@
 package org.axon.poc;
 
+import org.axon.poc.query.api.exceptions.EventErrorHandler;
+import org.axonframework.config.EventProcessingConfigurer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,4 +13,11 @@ public class AxonQueryApplication {
 		SpringApplication.run(AxonQueryApplication.class, args);
 	}
 
+	@Autowired
+	public void configure(EventProcessingConfigurer configurer) {
+		configurer.registerListenerInvocationErrorHandler(
+				"errorHandler",
+				c -> new EventErrorHandler()
+		);
+	}
 }
