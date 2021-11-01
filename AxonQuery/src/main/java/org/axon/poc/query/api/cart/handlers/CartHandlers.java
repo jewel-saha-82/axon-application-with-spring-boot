@@ -7,11 +7,15 @@ import org.axon.poc.query.api.cart.entities.CartItem;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
 import org.axonframework.messaging.interceptors.ExceptionHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-//@ProcessingGroup("errorHandler")
+@ProcessingGroup("cartExceptionHandler")
 public class CartHandlers {
+
+    private Logger logger = LoggerFactory.getLogger(getClass());
 
     private CartRepository repo;
 
@@ -47,8 +51,8 @@ public class CartHandlers {
         repo.save(cart);
     }
 
-//    @ExceptionHandler
-//    public void handle(Exception exception) throws Exception {
-//        throw exception;
-//    }
+    @ExceptionHandler
+    public void handle(Exception exception) throws Exception {
+        logger.warn(exception.getMessage());
+    }
 }

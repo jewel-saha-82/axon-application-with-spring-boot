@@ -1,5 +1,6 @@
 package org.axon.poc;
 
+import org.axon.poc.query.api.cart.exceptions.CartErrorHandler;
 import org.axon.poc.query.api.test.exceptions.EventErrorHandler;
 import org.axonframework.config.EventProcessingConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,16 @@ public class AxonQueryApplication {
 	@Autowired
 	public void configure(EventProcessingConfigurer configurer) {
 		configurer.registerListenerInvocationErrorHandler(
-				"errorHandler",
+				"exceptionHandler",
 				c -> new EventErrorHandler()
+		);
+	}
+
+	@Autowired
+	public void configureCartError(EventProcessingConfigurer configurer) {
+		configurer.registerListenerInvocationErrorHandler(
+				"cartExceptionHandler",
+				c -> new CartErrorHandler()
 		);
 	}
 }
