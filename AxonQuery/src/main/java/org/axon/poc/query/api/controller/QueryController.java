@@ -28,7 +28,7 @@ public class QueryController {
         GetProductQuery getProductQuery = new GetProductQuery();
 
         List<ProductRestModel> productRestModels =
-        queryGateway.query(getProductQuery, ResponseTypes.multipleInstancesOf(ProductRestModel.class)).join();
+                queryGateway.query(getProductQuery, ResponseTypes.multipleInstancesOf(ProductRestModel.class)).join();
 
         return productRestModels;
     }

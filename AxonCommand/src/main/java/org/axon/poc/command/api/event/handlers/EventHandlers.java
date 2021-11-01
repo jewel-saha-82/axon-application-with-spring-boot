@@ -1,11 +1,11 @@
 package org.axon.poc.command.api.event.handlers;
 
+import com.axon.common.event.DeviceCreatedEvent;
+import com.axon.common.event.ProductCreatedEvent;
 import org.axon.poc.command.api.entities.Device;
 import org.axon.poc.command.api.entities.Product;
 import org.axon.poc.command.api.repository.DeviceRepository;
 import org.axon.poc.command.api.repository.ProductRepository;
-import org.axon.poc.event.DeviceCreatedEvent;
-import org.axon.poc.event.ProductCreatedEvent;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;

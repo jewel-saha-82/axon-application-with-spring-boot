@@ -1,7 +1,7 @@
 package org.axon.poc.query.api.event.handlers;
 
-import org.axon.poc.event.DeviceCreatedEvent;
-import org.axon.poc.event.ProductCreatedEvent;
+import com.axon.common.event.DeviceCreatedEvent;
+import com.axon.common.event.ProductCreatedEvent;
 import org.axon.poc.query.api.entities.Device;
 import org.axon.poc.query.api.entities.Product;
 import org.axon.poc.query.api.repository.DeviceRepository;

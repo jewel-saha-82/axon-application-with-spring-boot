@@ -1,7 +1,7 @@
 package org.axon.poc.command.api.aggregate;
 
+import com.axon.common.event.DeviceCreatedEvent;
 import org.axon.poc.command.api.commands.CreateDeviceCommand;
-import org.axon.poc.event.DeviceCreatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
