@@ -11,5 +11,7 @@ Resources
 
 Common module for Event classes are required if the Command & Qurey are separate in two modules.
 
-#Test
+#Test - 
 https://medium.com/digitalfrontiers/test-first-development-using-axon-framework-72f6d2a3d6f2
+
+#EventHandler test - https://stackoverflow.com/questions/52373710/axonframework-how-to-test-eventhandler
