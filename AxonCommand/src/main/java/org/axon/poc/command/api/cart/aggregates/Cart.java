@@ -67,8 +67,6 @@ public class Cart {
             int val = items.get(event.getItem());
             items.put(event.getItem(), val-event.getQuantity());
         }
-        else
-            items.put(event.getItem(), event.getQuantity());
 
         System.out.println("Removed: UUID = " + event.getCartId() + ", Item = " + event.getItem()
                 + ", Current Quantity = " + items.get(event.getItem()));
