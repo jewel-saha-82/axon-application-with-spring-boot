@@ -9,5 +9,9 @@ Resources
 6. https://www.youtube.com/watch?v=tqn9p8Duy54 - Spring Boot
 7. https://www.youtube.com/watch?v=Jp-rW-XOYzA - Webiner
 
-# https://stackoverflow.com/questions/51879692/events-from-axondb-eventstore-do-not-arrive-in-my-trackingeventprocessor
-You mentioned that you have two different applications. Do you have a common module between those applications which shares the core API (commands, events, and queries)? If by any chance that is not the case, does the fully qualified name of your events matches (one in the publishing application and one the consuming application)? If the fully qualified name of events does not match, tracking event processor will not be able to pick it up.
+Common module for Event classes are required if the Command & Qurey are separate in two modules.
+
+#Test - 
+https://medium.com/digitalfrontiers/test-first-development-using-axon-framework-72f6d2a3d6f2
+
+#EventHandler test - https://stackoverflow.com/questions/52373710/axonframework-how-to-test-eventhandler
